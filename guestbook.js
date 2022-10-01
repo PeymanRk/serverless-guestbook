@@ -18,6 +18,7 @@ const guestbook = {
       type: 'PUT',
       url: `${apiUrl}/save-guestbook-entries-sequence.json`,
       contentType: 'application/json; charset=utf-8',
+      crossDomain: true,
       data: JSON.stringify({
         name,
         email,
